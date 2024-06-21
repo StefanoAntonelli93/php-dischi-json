@@ -53,8 +53,11 @@
             <div class="container">
                 <div class="content p-2">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
+                        <div class="col-auto ">
                             <p>PHP dischi JSON</p>
+                        </div>
+                        <div class="col-auto ">
+                            <p>Powered by Stefano</p>
                         </div>
                         <div class="col-auto">
                             <img class="footer-logo" src="./images/logo.png" alt="logo">
@@ -64,7 +67,9 @@
             </div>
         </footer>
     </div>
-    <!-- vue.js -->
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- vue.js cdn-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- main js -->
     <script type="text/javascript" src="main.js"></script>
