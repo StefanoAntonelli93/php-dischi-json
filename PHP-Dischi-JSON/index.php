@@ -27,9 +27,12 @@
         <header class=" bg-warning vw-100 position-fixed top-0">
             <div class="container">
 
-                <div class="content text-center p-3 d-flex justify-content-between align-items-center">
-                    <img class="logo" src="./images/logo.png" alt="logo">
-                    <h1 class="fw-semibold">{{ title }}</h1>
+                <div class="content text-center py-3 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img class="logo" src="./images/logo.png" alt="logo">
+                        <h1 class="fw-semibold m-0 ps-3">{{ title }}</h1>
+
+                    </div>
                 </div>
             </div>
         </header>
@@ -38,12 +41,13 @@
                 <div class="container ">
 
                     <div class="content">
+                        <h2 class="text-warning fw-semibold">Top songs 1900-1999</h2>
                         <ul class="d-flex flex-wrap g-3 list-unstyled justify-content-between">
                             <!-- ciclo for su chiamata API -->
                             <li class="  g-2 bg-dark mt-5" v-for="element in album">
-                                <img :src="element.img" :alt="element.name">
-                                <div class="text-white text-center pt-2">{{ element.name }}</div>
-                                <div class="text-white text-center p-2  border-bottom border-warning">{{ element.artist }}</div>
+                                <img style: width="300px" :src="element.img" :alt="element.name">
+                                <div class="text-white text-center pt-3 fw-semibold">{{ element.name }}</div>
+                                <div class="text-white text-center py-2  border-bottom border-warning">{{ element.artist }}</div>
                             </li>
                         </ul>
                     </div>

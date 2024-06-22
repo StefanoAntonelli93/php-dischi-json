@@ -3,74 +3,86 @@
 $discs_array = [
     [
         'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/my-bloody-valentine-loveless.jpg?resize=300%2C300&ssl=1',
+        'numb' => '1.',
         'name' => 'Loveless',
         'artist' => 'My Bloody Valentine'
 
     ],
     [
         'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/nmh5.jpg?resize=300%2C300&ssl=1',
+        'numb' => '2.',
         'name' => 'In the Aeroplane Over the Sea',
         'artist' => 'Neutral Milk Hotel'
 
     ],
     [
         'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/tool-aenima.jpg?resize=300%2C300&ssl=1',
+        'numb' => '3.',
         'name' => 'Tool',
         'artist' => 'Ænima'
 
     ],
     [
         'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
+        'numb' => '4.',
         'name' => 'Ok computer',
         'artist' => 'Radiohead'
 
     ],
     [
         'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/pavement-crooked-rain-crooked-rain.jpg?resize=300%2C300&ssl=1',
+        'numb' => '5.',
         'name' => 'Crooked Rain, Crooked Rain ',
         'artist' => 'Pavement'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/nirvana-in-utero.jpg?resize=140%2C140',
+        'numb' => '6.',
+        'name' => 'In Utero',
+        'artist' => 'Nirvana'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/slint_spiderland-295x300.jpg?resize=140%2C142',
+        'numb' => '7.',
+        'name' => 'Spiderland ',
+        'artist' => 'Slint '
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/blur-blur.jpg?resize=300%2C300&ssl=1',
+        'numb' => '8.',
+        'name' => 'Blur',
+        'artist' => 'Blur'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/autechre-incunabula.jpg?resize=300%2C300&ssl=1',
+        'numb' => '9.',
+        'name' => 'Incunabula',
+        'artist' => 'Autechre'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/flaming-lips-the-soft-bulletin.jpg?resize=140%2C140',
+        'numb' => '10.',
+        'name' => 'The Soft Bulletin ',
+        'artist' => 'The Flaming Lips'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/pulp-different-class.png?resize=300%2C300&ssl=1',
+        'numb' => '11.',
+        'name' => 'Different Class',
+        'artist' => ' Pulp'
 
     ],
     [
-        'img' => 'https://www.ondarock.it/classifiche/anni90/immagini/winner.jpg',
-        'name' => 'Radiohead',
-        'artist' => 'Radiohead'
+        'img' => 'https://i0.wp.com/doyourealize.it/wp-content/uploads/2017/03/red-house-painters-down-colorful-hill.jpg?resize=140%2C140',
+        'numb' => '12.',
+        'name' => 'Down Colourful Hill ',
+        'artist' => ' Red House Painters'
 
     ],
 ];
