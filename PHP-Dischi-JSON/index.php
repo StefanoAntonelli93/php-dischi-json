@@ -35,14 +35,15 @@
         </header>
         <main class="main">
             <section>
-                <div class="container bg-warning-subtle">
+                <div class="container ">
 
                     <div class="content">
-                        <ul class="d-flex flex-wrap gap-3 list-unstyled p-5 mt-5">
-                            <li class="p-5 border border-5 border-secondary-subtle" v-for="disc in discs">
-                                <img :src="disc.img" :alt="disc.name">
-                                <div>{{ disc.name }}</div>
-                                <div>{{ disc.artist }}</div>
+                        <ul class="d-flex flex-wrap g-3 list-unstyled justify-content-between">
+                            <!-- ciclo for su chiamata API -->
+                            <li class="  g-2 bg-dark mt-5" v-for="element in album">
+                                <img :src="element.img" :alt="element.name">
+                                <div class="text-white text-center pt-2">{{ element.name }}</div>
+                                <div class="text-white text-center p-2  border-bottom border-warning">{{ element.artist }}</div>
                             </li>
                         </ul>
                     </div>
