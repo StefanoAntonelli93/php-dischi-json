@@ -87,6 +87,13 @@ $discs_array = [
     ],
 ];
 
+// indico al client che i file sono di tipo JSON
 header('Content-Type:application/json');
-// trasformo l'array associativo in un fil JSON
-echo json_encode($discs_array);
+// trasformo l'array associativo in un file JSON
+$json_data = json_encode($discs_array, JSON_PRETTY_PRINT);
+
+// Salvo i dati JSON in un file
+file_put_contents('discs.json', $json_data);
+
+// Visualizzo i dati JSON
+echo $json_data;
