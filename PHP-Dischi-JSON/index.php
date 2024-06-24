@@ -10,10 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Dischi JSON</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./style.css">
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,9 @@
 </head>
 
 <body class="bg-dark">
+
     <div id="app" v-cloak>
-        <header class=" bg-warning vw-100 position-fixed top-0">
+        <header class=" bg-warning vw-100 position-fixed top-0 z-3">
             <div class="container">
 
                 <div class="content text-center py-3 d-flex justify-content-between align-items-center">
@@ -37,6 +38,7 @@
             </div>
         </header>
         <main class="main">
+
             <section>
                 <div class="container ">
 
@@ -44,19 +46,33 @@
                         <h2 class="text-warning fw-semibold">Top songs 1900-1999</h2>
                         <ul class="d-flex flex-wrap g-3 list-unstyled justify-content-between">
                             <!-- ciclo for su chiamata API -->
-                            <li class="  g-2 bg-dark mt-5" v-for="element in album">
-                                <img style: width="300px" :src="element.img" :alt="element.name">
+                            <li class="g-2 bg-dark mt-5" v-for="element in album" @click="showDetails(element)">
+                                <img class="img-albums" style="width: 300px;" :src="element.img" :alt="element.name">
                                 <div class="text-white text-center pt-3 fw-semibold">{{ element.name }}</div>
-                                <div class="text-white text-center py-2  border-bottom border-warning">{{ element.artist }}</div>
+                                <div class="text-white text-center py-2 border-bottom border-warning">{{ element.artist }}</div>
                             </li>
+
                         </ul>
                     </div>
+                    <div v-if="showModal" class="modal-overlay" @click="closeModal">
+                        <!-- con click stop non si chiude il modale qunado ci clicchi sopra -->
+                        <div class="modal-content d-flex" @click.stop>
+                            <img class="w-50" :src="selectedAlbum.img" :alt="selectedAlbum.name">
+                            <h3>{{ selectedAlbum.name }}</h3>
+                            <p>Artist: {{ selectedAlbum.artist }}</p>
+                            <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nulla nostrum veritatis obcaecati eaque fuga quod minima iusto dignissimos laudantium cum repellendus alias nesciunt, facilis ullam similique, culpa, neque praesentium?</p>
+                        </div>
+                        <button class="" @click="closeModal">X</button>
+                    </div>
+
+
+
                 </div>
             </section>
         </main>
         <footer class="bg-warning">
             <div class="container">
-                <div class="content p-2">
+                <div class="content py-4">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto ">
                             <p>PHP dischi JSON</p>
