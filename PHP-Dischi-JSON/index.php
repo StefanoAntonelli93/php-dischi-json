@@ -62,7 +62,7 @@
                             <p>Artist: {{ selectedAlbum.artist }}</p>
                             <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nulla nostrum veritatis obcaecati eaque fuga quod minima iusto dignissimos laudantium cum repellendus alias nesciunt, facilis ullam similique, culpa, neque praesentium?</p>
                         </div>
-                        <button class="" @click="closeModal">X</button>
+                        <button class="border-2 border-warning btn btn-outline-dark text-white" @click="closeModal">X</button>
                     </div>
 
 
