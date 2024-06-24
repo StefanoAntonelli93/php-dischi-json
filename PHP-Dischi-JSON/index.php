@@ -57,10 +57,17 @@
                     <div v-if="showModal" class="modal-overlay" @click="closeModal">
                         <!-- con click stop non si chiude il modale qunado ci clicchi sopra -->
                         <div class="modal-content d-flex" @click.stop>
-                            <img class="w-50" :src="selectedAlbum.img" :alt="selectedAlbum.name">
-                            <h3>{{ selectedAlbum.name }}</h3>
-                            <p>Artist: {{ selectedAlbum.artist }}</p>
-                            <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nulla nostrum veritatis obcaecati eaque fuga quod minima iusto dignissimos laudantium cum repellendus alias nesciunt, facilis ullam similique, culpa, neque praesentium?</p>
+                            <div class="row">
+                                <div class="col-4"><img class="w-100" :src="selectedAlbum.img" :alt="selectedAlbum.name">
+                                </div>
+                                <div class="col-6">
+                                    <h3>{{ selectedAlbum.name }}</h3>
+                                    <p>Artist: {{ selectedAlbum.artist }}</p>
+                                    <div class="description">
+                                        <p>Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nulla nostrum veritatis obcaecati eaque fuga quod minima iusto dignissimos laudantium cum repellendus alias nesciunt, facilis ullam similique, culpa, neque praesentium?</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="border-2 border-warning btn btn-outline-dark text-white" @click="closeModal">X</button>
                     </div>
